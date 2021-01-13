@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display a dialog box which will ask for your favorite drink.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var text;
+  var favDrink = prompt("What's your favorite drink?", "Mc Dowells");
+  switch(favDrink) {
+  case "Mc Dowells":
+  text = "This would kill you faster than you imagine";
+  break;
+    case "Coka cola":
+      text = "Excellent choice. Coka cola is good for your soul.";
+      break;
+      case "coka cola":
+      text = "Excellent choice. coka cola is good for your soul";
+      break;
+    case "Maltina":
+      text = "Maltina, adds blood to the body";
+      break;
+    case "Hero":
+      text = "Really? Are you sure that Hero is your favorite?";
+      break;
+      case "Fanta":
+      text = "Nourishment";
+      break;
+    default:
+      text = "I have never heard of that one..";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+
+</body>
+</html>
